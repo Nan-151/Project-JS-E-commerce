@@ -9,7 +9,6 @@
     width: 100%;
     .card{
         background: rgb(45, 9, 9);
-        flex: 1;
         @include flex(center, center);
         flex-direction: column;
         text-align: center;
