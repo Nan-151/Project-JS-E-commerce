@@ -21,23 +21,7 @@ nav{
         }
         .search{
             flex: 1;
-            @include flex(center, flex-start);
-            .search-containt {
-                background-color: $text-color;
-                display: flex;
-                border-radius: 25px;
-                padding: 5px;
-                width: 70%;
-                ion-icon{
-                    color: $bg-color;
-                }
-                .search-btn{
-                    outline: none;
-                    border: none;
-                    background: none;
-                    width: 90%;
-                }
-            }
+            @include search(5px, 70%);
         }
         .login{
             flex: 1;

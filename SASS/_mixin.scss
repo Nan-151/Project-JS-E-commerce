@@ -4,3 +4,22 @@
     justify-content: $justify;
 
 }
+ @mixin search( $padding, $width) {
+    @include flex(center, flex-start);
+    .search-containt {
+        background-color: $text-color;
+        display: flex;
+        border-radius: 25px;
+        padding: $padding;
+        width: $width;
+        ion-icon{
+            color: $bg-color;
+        }
+        .search-btn{
+            outline: none;
+            border: none;
+            background: none;
+            width: 90%;
+        }
+    }
+ }
