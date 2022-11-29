@@ -1,0 +1,50 @@
+@import "variable";
+@import "mixin";
+
+.cards-container{
+    flex: 3;
+    @include flex(center, center);
+    gap: 5%;
+    flex-wrap: wrap;
+    width: 100%;
+    .card{
+        background: rgb(45, 9, 9);
+        flex: 1;
+        @include flex(center, center);
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        flex-basis: 25%;
+        margin: 10px;
+        gap: 10px;
+        .image{
+            img{
+                width: 80%;
+                box-sizing: border-box;
+            }
+        }
+        .stock{
+            background-color: $pre-order-color;
+            padding: 3px 7px;
+            border-radius: 5px;
+            color: white;
+            text-transform: uppercase;
+        }
+        .price{
+            font-size: 25px;
+        }
+        .icon{
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+            ion-icon{
+                font-size: xx-large;
+            }
+            .heart-rating{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

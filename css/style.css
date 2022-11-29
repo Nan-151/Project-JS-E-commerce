@@ -167,13 +167,90 @@ nav .nav-center .login .login-btn a p {
 }
 
 .banner {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   width: 100%;
+  height: 100%;
   background: red;
 }
 .banner img {
   width: 100%;
   height: 100%;
+}
+
+.cards-container {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.cards-container .card {
+  background: rgb(45, 9, 9);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin: 10px;
+  gap: 10px;
+}
+.cards-container .card .image img {
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cards-container .card .stock {
+  background-color: #19AEA5;
+  padding: 3px 7px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+.cards-container .card .price {
+  font-size: 25px;
+}
+.cards-container .card .icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cards-container .card .icon ion-icon {
+  font-size: xx-large;
+}
+.cards-container .card .icon .heart-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */
