@@ -1,0 +1,62 @@
+@import "variable";
+@import "mixin";
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    .nav-top{
+        flex: 1;
+        @include flex(center, flex-start);
+        padding: 13px;
+    }
+    .nav-center{
+        flex: 3;
+        display: flex;
+        font-size: 35px;
+        padding: 13px;
+        .logo{
+            flex: 1;
+            display: flex;
+        }
+        .search{
+            flex: 1;
+            @include flex(center, flex-start);
+            .search-containt {
+                background-color: $text-color;
+                display: flex;
+                border-radius: 25px;
+                padding: 5px;
+                width: 70%;
+                ion-icon{
+                    color: $bg-color;
+                }
+                .search-btn{
+                    outline: none;
+                    border: none;
+                    background: none;
+                    width: 90%;
+                }
+            }
+        }
+        .login{
+            flex: 1;
+            display: flex;
+            @include flex(center, end);
+            gap: 10px;
+            .login-btn {
+                @include flex(center, flex-start);
+                p{
+                    font-size: 20px;
+                    color: red;
+                }
+                a{
+                    text-decoration: none;
+                    p{
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
