@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/style.min.css">
+    <title>Seller</title>
+    <link rel="stylesheet" href="../css/seller.min.css">
 </head>
 <body>
     <nav>
@@ -40,12 +40,44 @@
         </div>
     </nav>
     <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="instock/instock.html">All In-Stock</a>
-        <a href="pre_order/pre_order.html">All Pre-Order</a>
+        <a href="../index.html">Home</a>
+        <a href="../instock/instock.html">All In-Stock</a>
+        <a href="../pre_order/pre_order.html">All Pre-Order</a>
         <a href="">Contact Us</a>
-        <a href="" class="seller stay">Sale Product</a>
+        <a href="seller_page.html" class="seller stay">Sale Product</a>
     </div>
+    <div class="add-btn">
+        <button type="button">Add More +</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Availability</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Option</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>1</td>
+                <td>Chainsaw man</td>
+                <td>pre-order</td>
+                <td>$299.99</td>
+                <td>H:36, L:21cm, W:21cm</td>
+                <td>
+                    <img src="../image/edit.png" alt="" width="50px">
+                    <img src="../image/trash.png" alt="" width="50px">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
     <footer>
         <div class="footer-left">
             <div class="logo">

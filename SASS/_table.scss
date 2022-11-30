@@ -1,0 +1,24 @@
+@import "variable";
+@import "mixin";
+
+.table {
+    margin: 13px;
+    background: rgb(164, 162, 162);
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    font-size: 20px;
+    tr{
+        text-align: center;
+        th{
+            padding: 17px;
+            color: black;
+        border: 2px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        border-radius: 20px;
+        }
+        td{
+            @extend th;
+        }
+    }
+  }

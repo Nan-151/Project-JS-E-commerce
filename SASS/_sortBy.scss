@@ -6,11 +6,7 @@
     gap: 5px;
     padding: 2%;
     #choosePrice{
-        padding: 5px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-
+        @include button (5px, 5px);
     }
 
 }
