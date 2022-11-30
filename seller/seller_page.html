@@ -75,7 +75,40 @@
             </tr>
         </tbody>
     </table>
-
+    <div id="product-dialog" style="display: block">
+        <dialog open>
+          <header>Upload New Product</header>
+  
+          <section>
+            <label>Title:</label>
+            <input id="title" type="text" placeholder="Title" />
+            <label>Name:</label>
+            <input id="nameOfChar" type="text" placeholder="Name of Character" />
+            <label for="">Season | Episode:</label>
+            <input id="Season" type="text" placeholder="Season or Episode" />
+            <label for="">Price:</label>
+            <input id="Price" type="text" placeholder="How much?" />
+            <div class="availability">
+                <p>Availability:</p>
+                <input id="true" name="stock" type="radio" />
+                <label for="">In-Stock</label>
+                <input id="true" name="stock" type="radio"/>
+                <label for="">In-Stock</label>
+            </div>
+            <label for="">Description</label>
+            <textarea name="" id="des" cols="30" rows="5"></textarea>
+            <input type="file">
+          </section>
+  
+          <menu>
+            <!-- When clicking on button,  call the right function  -->
+            <button>Cancel</button>
+  
+            <!-- When clicking on button,  call the right function  -->
+            <button>Create</button>
+          </menu>
+        </dialog>
+      </div>
 
 
     <footer>
@@ -120,6 +153,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="JS/main.js"></script>
+    <script src="edit.js"></script>
 </body>
 </html>

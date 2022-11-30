@@ -215,6 +215,62 @@ nav .nav-center .login .login-btn a p {
   border-collapse: collapse;
   border-radius: 20px;
 }
+#product-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+#product-dialog dialog {
+  position: fixed;
+  top: 10vh;
+  left: 20%;
+  width: 60%;
+  z-index: 100;
+  border-radius: 12px;
+  border: none;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 15px;
+}
+#product-dialog dialog header {
+  color: black;
+  font-size: 25px;
+  width: 100%;
+  padding: 1rem;
+}
+#product-dialog dialog section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#product-dialog dialog section input {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+#product-dialog dialog menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+#product-dialog dialog menu button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
