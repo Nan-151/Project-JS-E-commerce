@@ -47,7 +47,7 @@
         <a href="seller_page.html" class="seller stay">Sale Product</a>
     </div>
     <div class="add-btn">
-        <button type="button">Add More +</button>
+        <button type="button" id="add-product-btn">Add More +</button>
     </div>
 
     <table class="table">
@@ -77,7 +77,7 @@
     </table>
     <div id="product-dialog" style="display: block">
         <dialog open>
-          <header>Upload New Product</header>
+          <header >Upload New Product</header>
   
           <section>
             <label>Title:</label>
@@ -95,17 +95,17 @@
                 <input id="true" name="stock" type="radio"/>
                 <label for="">In-Stock</label>
             </div>
-            <label for="">Description</label>
+            <label for="">Description:</label>
             <textarea name="" id="des" cols="30" rows="5"></textarea>
             <input type="file">
           </section>
   
           <menu>
             <!-- When clicking on button,  call the right function  -->
-            <button>Cancel</button>
+            <button id="cancel-btn">Cancel</button>
   
             <!-- When clicking on button,  call the right function  -->
-            <button>Create</button>
+            <button id="create-btn">Create</button>
           </menu>
         </dialog>
       </div>
