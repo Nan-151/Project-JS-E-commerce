@@ -3,8 +3,8 @@
 
 .cards-container{
     flex: 3;
-    @include flex(center, center);
-    gap: 5%;
+    @include flex(center, start);
+    gap: 2%;
     flex-wrap: wrap;
     width: 100%;
     .card{
@@ -13,7 +13,7 @@
         flex-direction: column;
         text-align: center;
         padding: 10px;
-        flex-basis: 25%;
+        flex-basis: 27%;
         margin: 10px;
         gap: 10px;
         .image{

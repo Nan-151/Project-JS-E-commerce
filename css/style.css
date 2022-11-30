@@ -186,10 +186,10 @@ nav .nav-center .login .login-btn a p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 2%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
@@ -211,8 +211,8 @@ nav .nav-center .login .login-btn a p {
           flex-direction: column;
   text-align: center;
   padding: 10px;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
   margin: 10px;
   gap: 10px;
 }

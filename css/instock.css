@@ -186,6 +186,76 @@ nav .nav-center .login .login-btn a p {
   border-radius: 5px;
 }
 
+.feature-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 13px;
+}
+.feature-product .product-left {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+.feature-product .product-left .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.feature-product .product-left .search .search-containt {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
+  padding: 5px;
+  width: 50%;
+}
+.feature-product .product-left .search .search-containt ion-icon {
+  color: black;
+}
+.feature-product .product-left .search .search-containt .search-btn {
+  outline: none;
+  border: none;
+  background: none;
+  width: 90%;
+}
+.feature-product .product-left .list-title {
+  padding-left: 10px;
+}
+.feature-product .product-left .list-title .check-title {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+}
+.feature-product .product-right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 .cards-container {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -196,10 +266,10 @@ nav .nav-center .login .login-btn a p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 2%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
@@ -221,8 +291,8 @@ nav .nav-center .login .login-btn a p {
           flex-direction: column;
   text-align: center;
   padding: 10px;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
   margin: 10px;
   gap: 10px;
 }
