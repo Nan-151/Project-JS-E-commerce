@@ -2,5 +2,15 @@
 @import "mixin";
 
 .sort-by-contant{
-    @include flex(center, end)
+    @include flex(center, end);
+    gap: 5px;
+    padding: 2%;
+    #choosePrice{
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+
+    }
+
 }

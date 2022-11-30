@@ -176,6 +176,14 @@ nav .nav-center .login .login-btn a p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  gap: 5px;
+  padding: 2%;
+}
+.sort-by-contant #choosePrice {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 
 .cards-container {
