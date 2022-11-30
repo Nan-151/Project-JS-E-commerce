@@ -22,6 +22,13 @@ let productInfo = [
 function saveProductInfo(){
     localStorage.setItem("productInfo", JSON.stringify(productInfo));
 }
+
+function loadProductInfo() {
+    let storedProductInfo = JSON.parse(localStorage.getItem("productInfo"));
+    if (storedProductInfo !== null) {
+        productInfo = storedProductInfo;
+    }
+  }
 // ------------------ create card---------
 function listCard() {
     let color = "#19AEA5";
@@ -99,9 +106,7 @@ function listCard() {
     };
 
     console.log(cardContainer)
-    
-    console.log(cardContainer)
-    debugger
+        // debugger
 }
  listCard();
 

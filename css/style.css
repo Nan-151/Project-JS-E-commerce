@@ -157,13 +157,23 @@ nav .nav-center .login .login-btn a p {
 }
 .menu a:hover {
   color: rgb(189, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .menu .seller {
-  color: rgb(189, 0, 0);
+  color: rgb(247, 132, 0);
   font-weight: bold;
 }
 .menu .seller:hover {
   color: whitesmoke;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.menu .stay {
+  color: rgb(189, 0, 0);
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .banner {
