@@ -3,22 +3,25 @@ const cardContainer = document.querySelector(".cards-container");
 
 let productInfo = [
     {
-        image: "https://media.entertainmentearth.com/assets/images/ec8b97b031314c47b89de5bf09b1a68axl.jpg",
-        arrivable: "pre-order",
+        image: "image/chainsaw-man(makima).jpg",
+        Availability: "pre-order",
         title: "Chainsaw man",
         nameOfCharacter: "Makima",
         episode: "Season 1",
         price: 299.99,
+        description: "1m",
     },
     {
-        image: "image/chainsaw-man(makima).jpg",
-        arrivable: "instock",
-        title: "chainsaw man",
-        nameOfCharacter: "Makima",
-        episode: "Season 2",
-        price: 399.99,
+        image: "https://media.entertainmentearth.com/assets/images/ec8b97b031314c47b89de5bf09b1a68axl.jpg",
+        Availability: "pre-order",
+        title: "Chainsaw man",
+        nameOfCharacter: "Makima-san",
+        episode: "Season 1",
+        price: 299.99,
+        description: "1m",
     },
 ]
+
 function saveProductInfo(){
     localStorage.setItem("productInfo", JSON.stringify(productInfo));
 }
@@ -36,7 +39,7 @@ function listCard() {
     for (let index = 0; index < productInfo.length; index++) {
         console.log(index)
         let product = productInfo[index];
-        if (product.arrivable === "instock"){
+        if (product.Availability === "In-Stock"){
             color = "#1D8C1B";
         }
 
@@ -55,7 +58,7 @@ function listCard() {
         stock.className = "stock";
         stock.style.backgroundColor = color; // set background color
         let h3 = document.createElement("h3"); // create stock h3 element
-        h3.textContent = product.arrivable;
+        h3.textContent = product.Availability;
 
         stock.appendChild(h3);
         card.appendChild(stock); // append stock element to card container
@@ -108,6 +111,7 @@ function listCard() {
     console.log(cardContainer)
         // debugger
 }
- listCard();
+loadProductInfo()
+listCard();
 
 
