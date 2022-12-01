@@ -19,6 +19,9 @@
         }
         td{
             @extend th;
+            img{
+                max-width: 50px;
+            }
         }
     }
   }

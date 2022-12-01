@@ -62,7 +62,7 @@
             </tr>
         </thead>
         <tbody id="tableBody">
-            <tr>
+            <!-- <tr>
                 <td>1</td>
                 <td>Chainsaw man</td>
                 <td>pre-order</td>
@@ -72,10 +72,10 @@
                     <img src="../image/edit.png" alt="" width="50px">
                     <img src="../image/trash.png" alt="" width="50px">
                 </td>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
-    <div id="product-dialog" style="display: block">
+    <div id="product-dialog" style="display: none">
         <dialog open>
           <header >Upload New Product</header>
   
@@ -87,17 +87,18 @@
             <label for="">Season | Episode:</label>
             <input id="Season" type="text" placeholder="Season or Episode" />
             <label for="">Price:</label>
-            <input id="Price" type="text" placeholder="How much?" />
+            <input id="Price" type="number" placeholder="How much?" />
             <div class="availability">
                 <p>Availability:</p>
-                <input id="true" name="stock" type="radio" />
+                <input id="available" name="stock" type="radio" value="In-Stock"/>
                 <label for="">In-Stock</label>
-                <input id="true" name="stock" type="radio"/>
-                <label for="">In-Stock</label>
+                <input id="available" name="stock" type="radio" value="Pre-Order"/>
+                <label for="">Pre-Order</label>
             </div>
             <label for="">Description:</label>
             <textarea name="" id="des" cols="30" rows="5"></textarea>
-            <input type="file">
+            <label for="">Image</label>
+            <input type="text" placeholder="Image as URL only!" id="image">
           </section>
   
           <menu>

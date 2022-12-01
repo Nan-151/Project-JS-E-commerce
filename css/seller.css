@@ -215,6 +215,10 @@ nav .nav-center .login .login-btn a p {
   border-collapse: collapse;
   border-radius: 20px;
 }
+.table tr td img {
+  max-width: 50px;
+}
+
 #product-dialog {
   position: fixed;
   top: 0;

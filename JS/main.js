@@ -3,7 +3,7 @@ const cardContainer = document.querySelector(".cards-container");
 
 let productInfo = [
     {
-        image: "image/chainsaw-man(makima).jpg",
+        image: "https://media.entertainmentearth.com/assets/images/ec8b97b031314c47b89de5bf09b1a68axl.jpg",
         arrivable: "pre-order",
         title: "Chainsaw man",
         nameOfCharacter: "Makima",
