@@ -230,10 +230,10 @@ nav .nav-center .login .login-btn a p {
 }
 #product-dialog dialog {
   position: fixed;
-  top: 10vh;
+  top: 3vh;
   left: 20%;
   width: 50%;
-  z-index: 100;
+  z-index: 10;
   border-radius: 12px;
   border: none;
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -257,12 +257,12 @@ nav .nav-center .login .login-btn a p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 24px;
+  font-size: 18px;
 }
-#product-dialog dialog section input {
-  padding: 10px;
+#product-dialog dialog section input, #product-dialog dialog section textarea, #product-dialog dialog section #available {
+  padding: 7px;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 15px;
 }
 #product-dialog dialog menu {
   display: -webkit-box;
@@ -280,7 +280,7 @@ nav .nav-center .login .login-btn a p {
 #product-dialog dialog menu #cancel-btn {
   background-color: rgb(189, 0, 0);
 }
-#product-dialog dialog menu #create-btn {
+#product-dialog dialog menu .comfirm-btn {
   background-color: #1D8C1B;
 }
 
