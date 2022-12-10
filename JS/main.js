@@ -54,6 +54,9 @@ function listCard() {
         image.appendChild(img); // append image element to card container
         card.appendChild(image);
 
+        let product_info = document.createElement("div");
+        product_info.className = "product-info";
+
         let stock = document.createElement("div"); // create stock element
         stock.className = "stock";
         stock.style.backgroundColor = color; // set background color
@@ -61,14 +64,14 @@ function listCard() {
         h3.textContent = product.Availability;
 
         stock.appendChild(h3);
-        card.appendChild(stock); // append stock element to card container
+        product_info.appendChild(stock); // append stock element to card container
 
         let title = document.createElement("div"); // create title element
         title.className = "title";
         let p = document.createElement("p"); // create title h4 element
         p.textContent = product.title + "-" + product.nameOfCharacter + "-" + product.episode;
         title.appendChild(p);
-        card.appendChild(title); // append title element to card container
+        product_info.appendChild(title); // append title element to card container
 
         let price = document.createElement("div"); // create price element
         price.className = "price";
@@ -76,7 +79,7 @@ function listCard() {
         spanPice.id = "price";
         spanPice.textContent = "$" + (product.price);
         price.appendChild(spanPice);
-        card.appendChild(price); // append price element to card container
+        product_info.appendChild(price); // append price element to card container
 
         let iconContent = document.createElement("div"); // create icon container element
         iconContent.className = "icon";
@@ -104,12 +107,14 @@ function listCard() {
         cart.appendChild(cartIcon);// append cart icon element to cart 
         iconContent.appendChild(cart) // append cart to icon container
     
-        card.appendChild(iconContent);// append card
+        product_info.appendChild(iconContent);// append card
+        card.appendChild(product_info);
         cardContainer.appendChild(card);
+        console.log(product_info)
     };
 
     console.log(cardContainer)
-        // debugger
+        
 }
 loadProductInfo()
 listCard();
