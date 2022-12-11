@@ -1,7 +1,7 @@
 const dom_dialog = document.querySelector("#product-dialog");
 const dom_add_button = document.querySelector("#add-product-btn");
 const cancel_button = document.querySelector("#cancel-btn");
-const create_button = document.querySelector("#create-btn");
+const comfirm_button = document.querySelector("#create-btn");
 const table_view = document.querySelector(".table");
 // const tableBody = document.querySelector("#tableBody");
 
@@ -19,7 +19,7 @@ var switch_btn = true;
 
 let productInfo = [
     {
-        image: "image/chainsaw-man(makima).jpg",
+        image: "https://ae01.alicdn.com/kf/H36ce38d44eba4adcb1d69b0340ddd119H/Bad-Woman-Studio-Chainsaw-Man-Machima-1-4-Scale-GK-Limited-Edition-Resin-Statue-Handmade-Figures.png_.webp",
         Availability: "pre-order",
         title: "Chainsaw man",
         nameOfCharacter: "Makima",
@@ -46,6 +46,7 @@ function loadProductInfo() {
     let storedProductInfo = JSON.parse(localStorage.getItem("productInfo"));
     if (storedProductInfo !== null) {
         productInfo = storedProductInfo;
+        
     }
   }
 
@@ -60,29 +61,26 @@ function hideDialog(element){
 // show dialog information with click button addMoreProduct
 function addMoreProduct(){
     switch_btn = true;
-    create_button.textContent = "create";
+    comfirm_button.textContent = "create";
+    comfirm_button.id = "create-btn";
     clearInfo()
     showDialog(dom_dialog);
 }
-// button create
-function createButton(){
-    switch_btn = false;
-    // uploadProduct()
-}
+
 function btnContainer(){
     hideDialog(dom_dialog);
-    if (create_button.id === 'edit-btn'){
+    if (comfirm_button.id === 'edit-btn'){
         // editProduct()
         updateProductInfo()
     }
-//     else if (create_button.id === 'create-btn'){
-
-// }
+    else if (comfirm_button.id === 'create-btn'){
+        console.log("yes")
+        addMore()
+    }
 }
 // hide dialog information when click cancel button
 function cancelButton(){
     hideDialog(dom_dialog);
-    // alert (dom_image.value);
 }
 // list all products information
 function listCard(){
@@ -139,20 +137,16 @@ function listCard(){
 // to remove products
 function removeProduct(event){
     let index = event.target.parentElement.parentElement.dataset.index;
-    console.log(index);
-
     productInfo.splice(index, 1);
-
     saveProductInfo();
-
     listCard();
 }
 
 // to edit product
 let index_editor = 0
 function editProduct(event){
-    create_button.id = "edit-btn";
-    create_button.textContent = "Edit";
+    comfirm_button.id = "edit-btn";
+    comfirm_button.textContent = "Edit";
     let index = event.target.parentElement.parentElement.dataset.index;
     index_editor = index;
 
@@ -186,7 +180,8 @@ function updateProductInfo(){
     newUpDate.description = dom_description.value;
     console.log(newUpDate);
     productInfo.splice(index_editor, 1, newUpDate);
-    listCard()
+    saveProductInfo();
+    listCard();
 }
 // clear product information when click add more products
 function clearInfo(){
@@ -200,7 +195,6 @@ function clearInfo(){
 // create and upload products
 function addMore(){
     let productPush = {};
-
     let  available = ""
     dom_available.forEach(element => {
         if(element.checked){
@@ -235,23 +229,9 @@ function addMore(){
     listCard();
 }
 
-
-
-
-
-function uploadProduct(){
-    // clear information 
-
-    
-    // create object to create new product
-    // if (switch_btn == true){
-    // }
-}
-// removeProduct(event)
-
 dom_add_button.addEventListener("click", addMoreProduct);
-create_button.addEventListener("click", btnContainer);
+comfirm_button.addEventListener("click", btnContainer);
 cancel_button.addEventListener("click", cancelButton);
-saveProductInfo();
+// saveProductInfo();
 loadProductInfo();
 listCard();

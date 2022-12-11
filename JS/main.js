@@ -3,7 +3,7 @@ const cardContainer = document.querySelector(".cards-container");
 
 let productInfo = [
     {
-        image: "image/chainsaw-man(makima).jpg",
+        image: "https://ae01.alicdn.com/kf/H36ce38d44eba4adcb1d69b0340ddd119H/Bad-Woman-Studio-Chainsaw-Man-Machima-1-4-Scale-GK-Limited-Edition-Resin-Statue-Handmade-Figures.png_.webp",
         Availability: "pre-order",
         title: "Chainsaw man",
         nameOfCharacter: "Makima",
@@ -39,8 +39,10 @@ function listCard() {
     for (let index = 0; index < productInfo.length; index++) {
         console.log(index)
         let product = productInfo[index];
-        if (product.Availability === "In-Stock"){
+        if (product.Availability.toLowerCase() === "in-stock"){
             color = "#1D8C1B";
+        }else if (product.Availability.toLowerCase() === "pre-order"){
+            color = "#19AEA5"
         }
 
         let card = document.createElement("div");

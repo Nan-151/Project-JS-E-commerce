@@ -8,13 +8,13 @@
     flex-wrap: wrap;
     width: 100%;
     .card{
-        background: rgb(45, 9, 9);
+        // background: rgb(45, 9, 9);
         @include flex(center, center);
         flex-direction: column;
         text-align: center;
         padding: 10px;
         flex-basis: 27%;
-        height: 90%;
+        box-shadow: rgba(255, 0, 8, 0.233) 0px 8px 24px, rgba(244, 17, 17, 0.1) 0px 16px 56px, rgba(240, 29, 29, 0.1) 0px 24px 80px;
         margin: 10px;
         gap: 10px;
         .image{

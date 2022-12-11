@@ -289,7 +289,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding: 13px;
-  height: 100%;
 }
 footer .footer-left {
   -webkit-box-flex: 1;

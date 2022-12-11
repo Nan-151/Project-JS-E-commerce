@@ -285,7 +285,6 @@ nav .nav-center .login .login-btn a p {
   width: 100%;
 }
 .cards-container .card {
-  background: rgb(45, 9, 9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +302,8 @@ nav .nav-center .login .login-btn a p {
   padding: 10px;
   -ms-flex-preferred-size: 27%;
       flex-basis: 27%;
-  height: 90%;
+  -webkit-box-shadow: rgba(255, 0, 8, 0.233) 0px 8px 24px, rgba(244, 17, 17, 0.1) 0px 16px 56px, rgba(240, 29, 29, 0.1) 0px 24px 80px;
+          box-shadow: rgba(255, 0, 8, 0.233) 0px 8px 24px, rgba(244, 17, 17, 0.1) 0px 16px 56px, rgba(240, 29, 29, 0.1) 0px 24px 80px;
   margin: 10px;
   gap: 10px;
 }
@@ -382,7 +382,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding: 13px;
-  height: 100%;
 }
 footer .footer-left {
   -webkit-box-flex: 1;
