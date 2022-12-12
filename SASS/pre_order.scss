@@ -12,10 +12,12 @@ body{
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
- 
+
 @import"navbar";
 @import "menubar";
-@import "banner";
+@import "sortBy";
+@import "checkBoxTitle";
 @import "cards";
 @import "footer";

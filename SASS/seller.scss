@@ -1,0 +1,31 @@
+@import "variable";
+@import "mixin";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: $font;
+    background-color: $bg-color;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.add-btn{
+    padding: 13px;
+    @include flex(center, end);
+    
+    button{
+        @include button(12px, 7px);
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+@import"navbar";
+@import "menubar";
+@import "table";
+@import "dialog";
+@import "footer";

@@ -8,41 +8,54 @@
     flex-wrap: wrap;
     width: 100%;
     .card{
-        background: rgb(45, 9, 9);
+        // background: rgb(45, 9, 9);
         @include flex(center, center);
         flex-direction: column;
         text-align: center;
         padding: 10px;
         flex-basis: 27%;
+        box-shadow: rgba(255, 0, 8, 0.233) 0px 8px 24px, rgba(244, 17, 17, 0.1) 0px 16px 56px, rgba(240, 29, 29, 0.1) 0px 24px 80px;
         margin: 10px;
         gap: 10px;
         .image{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             img{
-                width: 80%;
+                width: 70%;
                 box-sizing: border-box;
             }
         }
-        .stock{
-            background-color: $pre-order-color;
-            padding: 3px 7px;
-            border-radius: 5px;
-            color: white;
-            text-transform: uppercase;
-        }
-        .price{
-            font-size: 25px;
-        }
-        .icon{
-            width: 100%;
-            
+        .product-info{
+            flex: 1;
             display: flex;
-            justify-content: space-between;
-            ion-icon{
-                font-size: xx-large;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 10px;
+            .stock{
+                background-color: $pre-order-color;
+                padding: 3px 7px;
+                border-radius: 5px;
+                color: white;
+                text-transform: uppercase;
             }
-            .heart-rating{
+            .price{
+                font-size: 25px;
+            }
+            .icon{
+                width: 100%;
+                
                 display: flex;
-                align-items: center;
+                justify-content: space-between;
+                ion-icon{
+                    font-size: xx-large;
+                }
+                .heart-rating{
+                    display: flex;
+                    align-items: center;
+                }
             }
         }
     }

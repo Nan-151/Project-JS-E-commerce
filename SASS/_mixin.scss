@@ -23,3 +23,10 @@
         }
     }
  }
+
+ @mixin button($pad, $bor_rad) {
+    border: none;
+    outline: none;
+    padding: $pad;
+    border-radius: $bor_rad;
+ }

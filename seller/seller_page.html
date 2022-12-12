@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/style.min.css">
+    <title>Seller</title>
+    <link rel="stylesheet" href="../css/seller.min.css">
 </head>
 <body>
     <nav>
@@ -15,7 +15,7 @@
         </div>
         <div class="nav-center">
             <a href="" class="logo">
-                <img src="image/akatsuki.png" width="100px">
+                <img src="../image/akatsuki.png" width="100px">
             </a>
             <div class="search">
                 <div class="search-containt">
@@ -40,24 +40,71 @@
         </div>
     </nav>
     <div class="menu">
-        <a href="index.html" class="stay">Home</a>
-        <a href="instock/instock.html">All In-Stock</a>
-        <a href="pre_order/pre_order.html">All Pre-Order</a>
+        <a href="../index.html">Home</a>
+        <a href="../instock/instock.html">All In-Stock</a>
+        <a href="../pre_order/pre_order.html">All Pre-Order</a>
         <a href="">Contact Us</a>
-        <a href="seller/seller_page.html" class="seller">Sale Product</a>
+        <a href="seller_page.html" class="seller stay">Sale Product</a>
     </div>
-    <div class="banner">
-        <a href="instock/instock.html">
-            <img src="image/banner.png" >
-        </a>
+    <div class="add-btn">
+        <button type="button" id="add-product-btn">Add More +</button>
     </div>
-    <div class="cards-container">
 
-    </div>    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Availability</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Option</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <div id="product-dialog" style="display: none">
+        <dialog open>
+          <header >Upload New Product</header>
+  
+          <section>
+            <label>Title:</label>
+            <input id="title" type="text" placeholder="Title" />
+            <label>Name:</label>
+            <input id="nameOfChar" type="text" placeholder="Name of Character" />
+            <label for="">Season | Episode:</label>
+            <input id="Season" type="text" placeholder="Season or Episode" />
+            <label for="">Price:</label>
+            <input id="Price" type="number" placeholder="How much?" />
+            <div class="availability">
+                <p>Availability:</p>
+                <input id="available" name="stock" type="radio" value="In-Stock"/>
+                <label for="">In-Stock</label>
+                <input id="available" name="stock" type="radio" value="Pre-Order"/>
+                <label for="">Pre-Order</label>
+            </div>
+            <label for="">Description:</label>
+            <textarea name="" id="des" cols="30" rows="3"></textarea>
+            <label for="">Image</label>
+            <input type="text" placeholder="Image as URL only!" id="image">
+          </section>
+  
+          <menu>
+            <!-- When clicking on button,  call the right function  -->
+            <button id="cancel-btn">Cancel</button>
+  
+            <!-- When clicking on button,  call the right function  -->
+            <button id="create-btn" class="comfirm-btn">Create</button>
+          </menu>
+        </dialog>
+      </div>
+
+
     <footer>
         <div class="footer-left">
             <div class="logo">
-                <img src="image/akatsuki.png" alt="" width="100px">
+                <img src="../image/akatsuki.png" alt="" width="100px">
             </div>
             <div class="socail">
                 <div class="contact">
@@ -96,6 +143,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="JS/main.js"></script>
+    <script src="edit.js"></script>
 </body>
 </html>

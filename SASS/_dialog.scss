@@ -1,0 +1,59 @@
+@import "variable";
+@import "mixin";
+
+#product-dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    dialog {
+        position: fixed;
+        top: 3vh;
+        left: 20%;
+        width: 50%;
+        z-index: 10;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        padding: 15px;
+        header{
+            color: black;
+            font-size: 25px;
+            width: 100%;
+            padding: 1rem;
+
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            input,textarea, #available{
+                padding: 7px;
+                margin-bottom: 5px;
+                font-size: 15px;
+            }
+            
+        }
+        menu{
+            display: flex;
+            gap: 5px;
+            button{
+                @include  button(10px, 5px);
+                 font-size: 20px;
+            }
+            #cancel-btn{
+                background-color: $menu-hover-color;
+            }
+            .comfirm-btn{
+                background-color:$in-stock-color;
+            }
+        }
+    }
+  
+}
